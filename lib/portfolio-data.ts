@@ -1,242 +1,111 @@
 export const profileData = {
-  name: 'John Doe',
-  title: 'Full-Stack Developer',
-  avatar: '/professional-developer-avatar.png',
-  email: 'john@example.com',
-  phone: '+1 (234) 567-890',
-  birthday: 'June 15, 1995',
-  location: 'San Francisco, California, USA',
+  name: 'Niraj Pagadyal',
+  title: 'IT Professional & Claims Officer',
+  avatar: '/niraj-avatar.jpg',
+  email: 'pagadyalniraj@gmail.com',
+  phone: '+61 481 522 340',
+  birthday: 'March 7, 2000',
+  location: 'Brisbane, Australia',
   social: {
-    github: 'https://github.com/johndoe',
-    twitter: 'https://twitter.com/johndoe',
-    instagram: 'https://instagram.com/johndoe',
+    github: '#',
+    linkedin: '#',
   },
 }
 
 export const aboutData = {
   description: [
-    "I'm a Full-Stack Developer from San Francisco, California, specializing in web development and creating innovative digital solutions. I enjoy turning complex problems into simple, beautiful and intuitive applications.",
-    "My job is to build your website or application so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I've worked with various technologies including React, Next.js, Node.js, and modern cloud platforms.",
+    "I'm a detail-oriented professional based in Brisbane, Australia, with experience in dental billing, insurance verification, and operations management. Currently pursuing a Master's in Information Technology at Asia Pacific International College, I bring a unique blend of healthcare administration expertise and emerging tech skills.",
+    "My background spans US dental insurance verification, patient billing support, and console operations at 7-Eleven. I'm skilled in checking coverage, reducing claim rejections, and maintaining accurate documentation. With hands-on experience in Python, Kali Linux, and security tools, I'm building a strong foundation in IT and cybersecurity.",
   ],
   services: [
     {
-      icon: 'Code',
-      title: 'Frontend Development',
-      description: 'Building modern, responsive web applications with React, Next.js, and TypeScript.',
+      icon: 'Shield',
+      title: 'Insurance Verification',
+      description:
+        'Expert in verifying dental insurance coverage, deductibles, and co-pay for dental treatments with US insurance companies.',
     },
     {
-      icon: 'Zap',
-      title: 'Backend Development',
-      description: 'Creating robust APIs and server-side solutions with Node.js and modern frameworks.',
+      icon: 'Database',
+      title: 'Data Management',
+      description:
+        'Skilled in maintaining accurate patient records, billing documentation, and operational logs with data privacy compliance.',
     },
     {
-      icon: 'Smartphone',
-      title: 'Mobile Development',
-      description: 'Professional development of mobile applications with React Native and modern tools.',
+      icon: 'Monitor',
+      title: 'Console Operations',
+      description:
+        'Experienced in monitoring production processes, troubleshooting equipment issues, and minimizing operational downtime.',
     },
     {
-      icon: 'PenTool',
-      title: 'UI/UX Design',
-      description: 'Designing intuitive and beautiful user interfaces that enhance user experience.',
+      icon: 'Lock',
+      title: 'Cyber Security',
+      description:
+        'Hands-on practice with Python, Kali Linux, and security tools. Completed academic project on data security.',
     },
   ],
-  testimonials: [
-    {
-      avatar: '/professional-man.jpg',
-      name: 'Daniel Lewis',
-      text: 'John was hired to create a corporate identity. We were very pleased with the work done. He has a lot of experience and is very concerned about the needs of client.',
-    },
-    {
-      avatar: '/professional-woman-diverse.png',
-      name: 'Jessica Miller',
-      text: 'John was hired to create a corporate identity. We were very pleased with the work done. He has a lot of experience and is very concerned about the needs of client.',
-    },
-    {
-      avatar: '/professional-man.jpg',
-      name: 'Michael Chen',
-      text: 'Outstanding work! John delivered a high-quality product that exceeded our expectations. His attention to detail is remarkable.',
-    },
-    {
-      avatar: '/professional-woman-diverse.png',
-      name: 'Sarah Johnson',
-      text: 'Professional, creative, and highly skilled. John is the developer you want on your team for any complex project.',
-    },
-  ],
-  clients: [
-    { name: 'TechCorp', logo: '/tech-company-logo.jpg' },
-    { name: 'StartupHub', logo: '/startup-logo.png' },
-    { name: 'DesignStudio', logo: '/design-agency-logo.png' },
-    { name: 'CodeLabs', logo: '/software-company-logo.png' },
-    { name: 'WebSolutions', logo: '/web-agency-logo.jpg' },
-    { name: 'AppMakers', logo: '/app-development-logo.jpg' },
-  ],
+  testimonials: [],
+  clients: [],
 }
 
 export const resumeData = {
   education: [
     {
-      title: 'University of California, Berkeley',
-      period: '2013 — 2017',
+      title: 'Masters of Information Technology',
+      institution: 'Asia Pacific International College',
+      period: 'Feb 2024 — Nov 2025',
       description:
-        'Studied Computer Science with a focus on web technologies and software engineering principles.',
-    },
-    {
-      title: 'Frontend Development Bootcamp',
-      period: '2017 — 2018',
-      description: 'Intensive program covering modern JavaScript frameworks, responsive design, and UX principles.',
+        'Relevant coursework in Networking, Cyber Security, and Database Management. Hands-on practice with Python, Kali Linux, and security tools. Completed academic project on data security.',
     },
   ],
   experience: [
     {
-      title: 'Senior Full-Stack Developer',
-      period: '2020 — Present',
+      title: 'Console Operator',
+      company: '7-Eleven',
+      period: 'Mar 2024 — Present',
+      location: 'Brisbane, QLD',
       description:
-        'Leading development of scalable web applications using React, Node.js, and cloud technologies. Mentoring junior developers and implementing best practices.',
+        'Operate console systems to monitor production processes efficiently. Assist in troubleshooting equipment issues to minimize downtime. Maintain accurate logs of operational activities and system performance. Collaborate with team members to ensure adherence to safety protocols.',
     },
     {
-      title: 'Full-Stack Developer',
-      period: '2018 — 2020',
+      title: 'Temporary Claim Management Officer',
+      company: '',
+      period: 'Current Role',
+      location: 'Brisbane, Australia',
       description:
-        'Developed and maintained multiple client projects using modern web technologies. Collaborated with design teams to create seamless user experiences.',
+        'Managing insurance claims with attention to detail, ensuring accurate documentation and timely processing in high-pressure environments.',
+    },
+    {
+      title: 'Trainee Billing Executive',
+      company: 'Asstron E Services',
+      period: 'Nov 2022 — Jun 2023',
+      location: 'Ahmedabad, India',
+      description:
+        'Called US dental insurance companies to verify patient coverage and benefits. Checked remaining balance, deductibles, and co-pay for dental treatments. Updated patient insurance details and records. Coordinated with dental clinics to confirm appointments. Helped reduce claim rejections by verifying correct insurance information.',
     },
   ],
   skills: [
-    { name: 'Web Design', level: 90 },
-    { name: 'Frontend Development', level: 95 },
-    { name: 'Backend Development', level: 85 },
-    { name: 'Database Design', level: 80 },
+    { name: 'Dental Insurance Verification', level: 90 },
+    { name: 'CRM & Billing Software', level: 85 },
+    { name: 'Data Management & Records', level: 85 },
+    { name: 'Communication (Phone & Email)', level: 90 },
+    { name: 'Python & Security Tools', level: 70 },
+    { name: 'Networking & Cyber Security', level: 65 },
   ],
 }
 
 export const portfolioData = {
-  categories: ['all', 'web design', 'applications', 'web development'],
-  projects: [
-    {
-      title: 'E-Commerce Platform',
-      category: 'web development',
-      image: '/modern-ecommerce-website.png',
-      description: 'Full-stack e-commerce solution with payment integration',
-      tech: ['Next.js', 'Node.js', 'PostgreSQL'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/johndoe/ecommerce',
-    },
-    {
-      title: 'Task Management App',
-      category: 'applications',
-      image: '/task-management-interface.png',
-      description: 'Collaborative task manager with real-time updates',
-      tech: ['React', 'Firebase', 'TypeScript'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/johndoe/taskmanager',
-    },
-    {
-      title: 'Portfolio Website',
-      category: 'web design',
-      image: '/minimalist-portfolio-design.jpg',
-      description: 'Modern portfolio design for creative professionals',
-      tech: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/johndoe/portfolio',
-    },
-    {
-      title: 'Social Media Dashboard',
-      category: 'web development',
-      image: '/analytics-dashboard.png',
-      description: 'Analytics dashboard with data visualization',
-      tech: ['React', 'D3.js', 'Express'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/johndoe/dashboard',
-    },
-    {
-      title: 'Mobile Banking App',
-      category: 'applications',
-      image: '/banking-app-interface.png',
-      description: 'Secure mobile banking application',
-      tech: ['React Native', 'Node.js', 'MongoDB'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/johndoe/banking',
-    },
-    {
-      title: 'Restaurant Website',
-      category: 'web design',
-      image: '/restaurant-website-design.png',
-      description: 'Elegant restaurant website with online ordering',
-      tech: ['Next.js', 'Sanity CMS', 'Stripe'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/johndoe/restaurant',
-    },
-  ],
+  categories: ['all'],
+  projects: [],
 }
 
 export const blogData = {
-  posts: [
-    {
-      title: 'Building Modern Web Applications with Next.js 15',
-      category: 'Development',
-      date: 'Mar 15, 2024',
-      readTime: '8 min',
-      image: '/web-development-coding.png',
-      excerpt: 'Deep dive into Next.js 15 features and App Router enhancements.',
-      tags: ['Next.js', 'React', 'Web Development'],
-      slug: 'building-modern-web-apps-nextjs-15',
-    },
-    {
-      title: 'Microservices Architecture: A Complete Guide',
-      category: 'Architecture',
-      date: 'Mar 8, 2024',
-      readTime: '12 min',
-      image: '/software-architecture.jpg',
-      excerpt: 'Design scalable microservices with real-world examples.',
-      tags: ['Architecture', 'Backend', 'DevOps'],
-      slug: 'microservices-architecture-guide',
-    },
-    {
-      title: 'The Art of UI/UX: Creating Delightful Experiences',
-      category: 'Design',
-      date: 'Feb 28, 2024',
-      readTime: '6 min',
-      image: '/ui-ux-design-concept.png',
-      excerpt: 'Principles of exceptional UI/UX design for interfaces users love.',
-      tags: ['Design', 'UI/UX', 'Frontend'],
-      slug: 'art-of-uiux-delightful-experiences',
-    },
-    {
-      title: 'TypeScript Best Practices for Large-Scale Applications',
-      category: 'Development',
-      date: 'Feb 20, 2024',
-      readTime: '10 min',
-      image: '/web-development-coding.png',
-      excerpt: 'Master TypeScript patterns for maintainable, type-safe code.',
-      tags: ['TypeScript', 'JavaScript', 'Best Practices'],
-      slug: 'typescript-best-practices',
-    },
-    {
-      title: 'Building Real-Time Applications with WebSockets',
-      category: 'Development',
-      date: 'Feb 12, 2024',
-      readTime: '9 min',
-      image: '/software-architecture.jpg',
-      excerpt: 'Implement real-time features using WebSockets and modern frameworks.',
-      tags: ['WebSockets', 'Real-time', 'Backend'],
-      slug: 'realtime-apps-websockets',
-    },
-    {
-      title: 'Mastering CSS Grid and Flexbox Layouts',
-      category: 'Design',
-      date: 'Feb 5, 2024',
-      readTime: '7 min',
-      image: '/ui-ux-design-concept.png',
-      excerpt: 'Modern CSS layout techniques with practical examples.',
-      tags: ['CSS', 'Layout', 'Frontend'],
-      slug: 'mastering-css-grid-flexbox',
-    },
-  ],
+  posts: [],
 }
 
 export const contactData = {
-  email: 'john@example.com',
-  phone: '+1 (234) 567-890',
-  location: 'San Francisco, CA',
+  email: 'pagadyalniraj@gmail.com',
+  phone: '+61 481 522 340',
+  location: 'Brisbane, Australia',
   mapEmbedUrl:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100940.14220298434!2d-122.50764017406082!3d37.75767381338211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus',
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226058.38434548747!2d152.85148565!3d-27.470932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b91579aac93d233%3A0x402a35af3deaf40!2sBrisbane%20QLD%2C%20Australia!5e0!3m2!1sen!2sau!4v1234567890123!5m2!1sen!2sau',
 }

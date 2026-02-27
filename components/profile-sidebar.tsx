@@ -1,5 +1,5 @@
 import { Mail, Phone, Calendar, MapPin } from 'lucide-react'
-import { Github, Twitter, Instagram } from 'lucide-react'
+import { Github, Linkedin } from 'lucide-react'
 import { profileData } from '@/lib/portfolio-data'
 
 interface ProfileSidebarProps {
@@ -8,14 +8,14 @@ interface ProfileSidebarProps {
 
 export function ProfileSidebar({ data = profileData }: ProfileSidebarProps) {
   return (
-    <aside className="w-full lg:w-80 bg-card rounded-2xl border border-border p-4 md:p-6 lg:sticky lg:top-8 h-fit">
+    <aside className="w-full lg:w-80 bg-card rounded-2xl border border-border p-4 md:p-6 lg:sticky lg:top-8 h-fit relative z-10">
       {/* Profile Image */}
       <div className="flex flex-col items-center">
         <div className="relative w-24 h-24 md:w-32 md:h-32 mb-4 md:mb-6">
-          <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-accent/20 via-accent/5 to-transparent animate-pulse-slow" />
+          <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-accent/30 via-accent/10 to-transparent animate-pulse-slow" />
           <div className="absolute inset-[2px] rounded-3xl bg-secondary overflow-hidden">
             <img
-              src={data.avatar || "/placeholder.svg"}
+              src={data.avatar || '/placeholder.svg'}
               alt={data.name}
               className="w-full h-full object-cover"
             />
@@ -96,22 +96,13 @@ export function ProfileSidebar({ data = profileData }: ProfileSidebarProps) {
           <Github className="w-5 h-5" />
         </a>
         <a
-          href={data.social.twitter}
+          href={data.social.linkedin}
           target="_blank"
           rel="noopener noreferrer"
           className="w-10 h-10 rounded-lg bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors flex items-center justify-center"
-          aria-label="Twitter"
+          aria-label="LinkedIn"
         >
-          <Twitter className="w-5 h-5" />
-        </a>
-        <a
-          href={data.social.instagram}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-10 h-10 rounded-lg bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors flex items-center justify-center"
-          aria-label="Instagram"
-        >
-          <Instagram className="w-5 h-5" />
+          <Linkedin className="w-5 h-5" />
         </a>
       </div>
     </aside>

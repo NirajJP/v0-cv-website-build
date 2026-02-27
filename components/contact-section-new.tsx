@@ -17,17 +17,18 @@ export function ContactSection({ data = contactData }: ContactSectionProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
+    // Handle form submission
     console.log('Form submitted:', formData)
   }
 
   return (
     <div className="space-y-6 md:space-y-8">
-      <div className="animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+      <div>
         <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Contact</h2>
         <div className="w-10 h-1 bg-accent rounded-full mb-6" />
       </div>
 
-      <div className="animate-fade-in-up w-full h-64 md:h-80 rounded-xl md:rounded-2xl overflow-hidden border border-border bg-secondary" style={{ animationDelay: '0.2s' }}>
+      <div className="w-full h-64 md:h-80 rounded-xl md:rounded-2xl overflow-hidden border border-border bg-secondary">
         <iframe
           src={data.mapEmbedUrl}
           width="100%"
@@ -40,8 +41,8 @@ export function ContactSection({ data = contactData }: ContactSectionProps) {
         />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-        <div className="flex items-center gap-3 md:gap-4 p-4 md:p-5 bg-secondary rounded-xl md:rounded-2xl border border-border hover:border-accent transition-all duration-300 group hover:shadow-lg hover:shadow-accent/5">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
+        <div className="flex items-center gap-3 md:gap-4 p-4 md:p-5 bg-secondary rounded-xl md:rounded-2xl border border-border hover:border-accent transition-colors group">
           <div className="w-12 h-12 md:w-14 md:h-14 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 transition-colors">
             <Mail className="w-5 h-5 md:w-6 md:h-6 text-accent" />
           </div>
@@ -56,7 +57,7 @@ export function ContactSection({ data = contactData }: ContactSectionProps) {
           </div>
         </div>
 
-        <div className="flex items-center gap-3 md:gap-4 p-4 md:p-5 bg-secondary rounded-xl md:rounded-2xl border border-border hover:border-accent transition-all duration-300 group hover:shadow-lg hover:shadow-accent/5">
+        <div className="flex items-center gap-3 md:gap-4 p-4 md:p-5 bg-secondary rounded-xl md:rounded-2xl border border-border hover:border-accent transition-colors group">
           <div className="w-12 h-12 md:w-14 md:h-14 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 transition-colors">
             <Phone className="w-5 h-5 md:w-6 md:h-6 text-accent" />
           </div>
@@ -71,7 +72,7 @@ export function ContactSection({ data = contactData }: ContactSectionProps) {
           </div>
         </div>
 
-        <div className="flex items-center gap-3 md:gap-4 p-4 md:p-5 bg-secondary rounded-xl md:rounded-2xl border border-border hover:border-accent transition-all duration-300 group hover:shadow-lg hover:shadow-accent/5">
+        <div className="flex items-center gap-3 md:gap-4 p-4 md:p-5 bg-secondary rounded-xl md:rounded-2xl border border-border hover:border-accent transition-colors group">
           <div className="w-12 h-12 md:w-14 md:h-14 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 transition-colors">
             <MapPin className="w-5 h-5 md:w-6 md:h-6 text-accent" />
           </div>
@@ -82,7 +83,7 @@ export function ContactSection({ data = contactData }: ContactSectionProps) {
         </div>
       </div>
 
-      <form onSubmit={handleSubmit} className="space-y-5 md:space-y-6 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+      <form onSubmit={handleSubmit} className="space-y-5 md:space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
@@ -94,7 +95,7 @@ export function ContactSection({ data = contactData }: ContactSectionProps) {
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               className="w-full px-4 md:px-5 py-3 md:py-3.5 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:border-accent focus:ring-2 focus:ring-accent/20 focus:outline-none transition-all text-sm md:text-base"
-              placeholder="Your name"
+              placeholder="John Doe"
               required
             />
           </div>
@@ -108,7 +109,7 @@ export function ContactSection({ data = contactData }: ContactSectionProps) {
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               className="w-full px-4 md:px-5 py-3 md:py-3.5 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:border-accent focus:ring-2 focus:ring-accent/20 focus:outline-none transition-all text-sm md:text-base"
-              placeholder="your@email.com"
+              placeholder="john@example.com"
               required
             />
           </div>

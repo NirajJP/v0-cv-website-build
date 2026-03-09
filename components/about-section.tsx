@@ -1,4 +1,4 @@
-import { PenTool, Code, Smartphone, Zap } from 'lucide-react'
+import { PenTool, Code, Smartphone, Zap, Shield, Network, Database } from 'lucide-react'
 import { aboutData } from '@/lib/portfolio-data'
 
 const iconMap = {
@@ -6,6 +6,9 @@ const iconMap = {
   Zap,
   Smartphone,
   PenTool,
+  Shield,
+  Network,
+  Database,
 }
 
 interface AboutSectionProps {
@@ -72,26 +75,28 @@ export function AboutSection({ data = aboutData }: AboutSectionProps) {
         </div>
       </div>
 
-      {/* Clients with Marquee Animation */}
-      <div>
-        <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">Clients</h3>
-        <div className="relative overflow-hidden py-4">
-          <div className="flex gap-4 md:gap-6 animate-marquee-slow">
-            {[...data.clients, ...data.clients].map((client, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 w-32 h-20 md:w-40 md:h-24 bg-secondary rounded-xl md:rounded-2xl border border-border flex items-center justify-center p-4 md:p-6 hover:border-accent transition-colors"
-              >
-                <img
-                  src={client.logo || "/placeholder.svg"}
-                  alt={client.name}
-                  className="w-full h-full object-contain opacity-70 hover:opacity-100 transition-opacity"
-                />
-              </div>
-            ))}
+      {/* Clients with Marquee Animation - Only show if there are clients */}
+      {data.clients && data.clients.length > 0 && (
+        <div>
+          <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">Clients</h3>
+          <div className="relative overflow-hidden py-4">
+            <div className="flex gap-4 md:gap-6 animate-marquee-slow">
+              {[...data.clients, ...data.clients].map((client, index) => (
+                <div
+                  key={index}
+                  className="flex-shrink-0 w-32 h-20 md:w-40 md:h-24 bg-secondary rounded-xl md:rounded-2xl border border-border flex items-center justify-center p-4 md:p-6 hover:border-accent transition-colors"
+                >
+                  <img
+                    src={client.logo || "/placeholder.svg"}
+                    alt={client.name}
+                    className="w-full h-full object-contain opacity-70 hover:opacity-100 transition-opacity"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </div>
   )
 }
